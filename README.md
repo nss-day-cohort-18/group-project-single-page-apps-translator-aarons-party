@@ -1,11 +1,5 @@
 # Language Translator
 
-## Setup
-
-```bash
-mkdir -p ~/workspace/group-projects/translator && cd $_
-```
-
 This will be a group project managed by Github Classroom, so pick one teammate to create the Classroom team. Once the repo is created, the other teammates can join the Classroom team and clone the repository.
 
 ## Instructions
