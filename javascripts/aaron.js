@@ -1,6 +1,6 @@
 "use strict";
 
-var Translate = (function(){
+var Translate = (function(potato){
 	var german = {
 		"we":"wir",
 		"wish":"wunsch",
@@ -13,8 +13,10 @@ var Translate = (function(){
 	return {
 		translateToGerman: function (translation) {
 			return german[translation];
-		},
-		translateToGerman: function
+		}
+	};
+
+	return potato;
 
 
 
