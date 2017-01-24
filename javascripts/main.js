@@ -1,36 +1,44 @@
 "use strict";
 
+
+console.log("Translate",  Translate);
 // each language option in the DOM declared as a variable 
-var selectDutch = document.getElementById("selectDutch");
-var selectSpanish = document.getElementById("selectSpanish");
-var selectGerman = document.getElementById("selectGerman");
 var languageSelect = document.getElementById("languageSelect");
 
-var button;
+var button = document.getElementById('button');
 // this is our input
 var input = document.getElementById("text-to-translate").value;
-input.addEventListener("click", Translate(input));
+
+console.log("This works");
 
 // this is our variables for each language 
-var dutchTranslate = Translate.translateToDutch("input");
-var spanishTranslate = Translate.translateToSpanish("input");
-var germanTranslate = Translate.translateToGerman("input");
+var dutchTranslate = Translate.translateToDutch;
+var spanishTranslate = Translate.translateToSpanish;
+var germanTranslate = Translate.translateToGerman;
 
-
+console.log("This works");
 // this is our output
 var output = document.getElementById("translated-text");
 
+console.log("This works");
 
-// this is our condition statement for each language 
 
-function langPicker(){
-if (languageSelect.selectedIndex === "0")  {
-	selectDutch;
-} else if (languageSelect.selectedIndex === "1") {
-	selectSpanish;
-} else if (languageSelect.selectedIndex === "2") {
-	selectGerman;
-}
+button.addEventListener("click", function(){
+	if (languageSelect.value === "dutch")  {
+		var translatePhrase = Translate.translateToDutch(input);
+	} else if (languageSelect.value === "spanish") {
+		var translatePhrase = Translate.translateToSpanish(input);
+	} else if (languageSelect.value === "german") {
+		var translatePhrase = Translate.translateToGerman(input);
+	}
 //output our translation on the page
-output.innerHTML = `<h1>Translation: ${} </h1>`;
-};
+output.innerHTML = `<h1>Translation: </h1>`; //${} 
+});
+
+// this is our condition statement for each language
+
+//output our translation on the page
+output.innerHTML = `<h1>Translation: </h1>`; //${} 
+
+
+console.log("This works");
