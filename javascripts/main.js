@@ -11,7 +11,7 @@ var input = document.getElementById("text-to-translate").value;
 
 console.log("This works");
 
-// this is our variables for each language 
+// these are our variables for each language 
 var dutchTranslate = Translate.translateToDutch;
 var spanishTranslate = Translate.translateToSpanish;
 var germanTranslate = Translate.translateToGerman;
