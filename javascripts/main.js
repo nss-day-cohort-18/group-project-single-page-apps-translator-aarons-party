@@ -1,6 +1,5 @@
 "use strict";
 
-
 console.log("Translate",  Translate);
 // each language option in the DOM declared as a variable 
 var languageSelect = document.getElementById("languageSelect");
@@ -28,15 +27,18 @@ button.addEventListener("click", function(){
 		input = document.getElementById("text-to-translate").value;
 		output.innerHTML = Translate.translateToDutch(input);
 		console.log("Dutch: ",  dutchTranslate);
+		responsiveVoice.speak(output.innerHTML, "US English Female", {rate: 0.8});
 	} else if (languageSelect.value === "spanish") {
 		Translate.translateToSpanish;
 		input = document.getElementById("text-to-translate").value;
 		output.innerHTML = Translate.translateToSpanish(input);
 		console.log(output)
+		responsiveVoice.speak(output.innerHTML, "UK English Male", {rate: 0.8});
 	} else if (languageSelect.value === "german") {
 		input = document.getElementById("text-to-translate").value;
 		output.innerHTML = Translate.translateToGerman(input);
 		console.log(output)
+		responsiveVoice.speak(output.innerHTML, "UK English Male", {rate: 0.8});
 		//console.log("German: ",  input);
 	}
 })
