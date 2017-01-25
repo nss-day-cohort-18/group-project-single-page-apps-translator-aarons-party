@@ -1,6 +1,6 @@
 "use strict";
 
-var Translate = (function(){
+var Translate = (function(original){
 	var spanish = {
 		"merry": "felíz",
 		"christmas": "navidad",
@@ -14,8 +14,11 @@ var Translate = (function(){
 		translateToSpanish: function(english){
 			console.log("translation",  spanish);
 			return spanish[english]
-		}
+		}	
 	};
+	
+	return {original};
+
 
 
 
