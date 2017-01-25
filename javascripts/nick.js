@@ -1,6 +1,6 @@
 "use strict";
 
-var Translate = (function(original){
+var Translate = (function(potato){
 	var spanish = {
 		"merry": "felíz",
 		"christmas": "navidad",
@@ -12,12 +12,22 @@ var Translate = (function(original){
 
 	
 
-		original.translateToSpanish = function(english){
-			console.log("translation", spanish);
-			return spanish[english];
+		potato.translateToSpanish = function(english){
+			console.log(spanish.merry);
+			var englishArray = english.split(" ");
+			console.log(englishArray);
+			var translatedMessage = [];
+			for (var i=0; i<englishArray.length; i++) {
+				console.log(spanish[englishArray[i]]);
+				translatedMessage.push(spanish[englishArray[i]]);
+			} 
+			console.log(translatedMessage);
+			var finalTranslation = translatedMessage.join(" ");
+			console.log(finalTranslation)
+			return finalTranslation;
 	};
 
-	return original;
+	return potato;
 
 
 
