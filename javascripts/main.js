@@ -28,11 +28,11 @@ button.addEventListener("click", function(){
 		console.log("Dutch: ",  dutchTranslate);
 	} else if (languageSelect.value === "spanish") {
 		Translate.translateToSpanish;
-
-		console.log("Spanish ",  spanishTranslate(input));
+		input = document.getElementById("text-to-translate").value;
+		output.innerHTML = Translate.translateToSpanish(input);
+		console.log(output)
 	} else if (languageSelect.value === "german") {
 		input = document.getElementById("text-to-translate").value;
-
 		output.innerHTML = Translate.translateToGerman(input);
 		console.log(output)
 		//console.log("German: ",  input);

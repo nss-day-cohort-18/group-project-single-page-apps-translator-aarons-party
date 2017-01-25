@@ -22,6 +22,7 @@ input {
 h2 {
 	width: 60%;
 	margin: 0 auto;
+	padding-bottom: 2em;
 }
 
 select {
@@ -32,6 +33,11 @@ select {
 h1 {
 	padding-top: 2em;
 	padding-bottom: 2em;
+}
+
+p {
+	font-size: 1em;
+	display: inline;
 }
 
 
