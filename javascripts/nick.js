@@ -10,16 +10,15 @@ var Translate = (function(original){
 		"year": "nuevo"
 	};
 
-	return {
-		translateToSpanish: function(english){
-			console.log("translation",  spanish);
-			return spanish[english]
-		}	
-	};
 	
-	return {original};
+		original.translateToSpanish = function(english){
+			console.log("translation",  spanish);
+			return spanish[english];
+	};
+
+	return original;
 
 
 
 
-})();
+})(Translate);

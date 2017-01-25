@@ -19,17 +19,20 @@ var germanTranslate = Translate.translateToGerman;
 console.log("This works");
 // this is our output
 var output = document.getElementById("translated-text");
-
 console.log("This works");
 
 
 button.addEventListener("click", function(){
 	if (languageSelect.value === "dutch")  {
-		var translatePhrase = Translate.translateToDutch(input);
+		
+		// dutchTranslate(input);
+		console.log("Dutch: ",  dutchTranslate);
 	} else if (languageSelect.value === "spanish") {
-		var translatePhrase = Translate.translateToSpanish(input);
+		Translate.translateToSpanish;
+		console.log("Spanish ",  spanishTranslate);
 	} else if (languageSelect.value === "german") {
-		var translatePhrase = Translate.translateToGerman(input);
+		Translate.translateToGerman;
+		console.log("German: ",  germanTranslate);
 	}
 //output our translation on the page
 output.innerHTML = `<h1>Translation: </h1>`; //${} 
