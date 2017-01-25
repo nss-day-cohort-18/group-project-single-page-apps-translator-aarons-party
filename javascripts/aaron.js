@@ -13,9 +13,8 @@ var Translate = (function(potato){
 		potato.translateToGerman = function(translation) {
 			return german[translation];
 	};
-
+  
 	return potato;
 
+})();
 
-
-})(Translate);
