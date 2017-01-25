@@ -15,9 +15,7 @@ var Translate = (function(potato){
 			return german[translation];
 		}
 	};
-
+  
 	return potato;
-
-
-
+  
 })();
