@@ -15,6 +15,6 @@ var Translate = (function(){
 	translateToDutch: function(english){
 		return dutch(english);
 	}
-}
+};
 
 }); 

@@ -13,8 +13,8 @@ var Translate = (function(){
 	return {
 		translateToGerman: function (translation) {
 			return german[translation];
-		},
-		translateToGerman: function
+		}
+	};
 
 
 
