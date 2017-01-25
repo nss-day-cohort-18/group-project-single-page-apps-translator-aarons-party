@@ -9,13 +9,12 @@ var Translate = (function(potato){
 		"merry":"frohlich",
 		"christmas":"weihnachten"
 	};
-
-	return {
-		translateToGerman: function (translation) {
+	 
+		potato.translateToGerman = function(translation) {
 			return german[translation];
-		}
 	};
   
 	return potato;
-  
+
 })();
+
