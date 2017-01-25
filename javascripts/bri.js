@@ -16,7 +16,7 @@ var Translate = (function(){
 
 	return {
 		translateToDutch: function(english){
-			console.log("translation",  dutch);
+			console.log("translation", dutch);
 			return dutch[english];
 		}
 	};
