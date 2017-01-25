@@ -29,7 +29,8 @@ button.addEventListener("click", function(){
 		console.log("Dutch: ",  dutchTranslate);
 	} else if (languageSelect.value === "spanish") {
 		Translate.translateToSpanish;
-		console.log("Spanish ",  spanishTranslate);
+
+		console.log("Spanish ",  spanishTranslate(input));
 	} else if (languageSelect.value === "german") {
 		Translate.translateToGerman;
 		console.log("German: ",  germanTranslate);
