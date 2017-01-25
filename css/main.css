@@ -1,3 +1,4 @@
+
 body {
 	text-align: center;
 	background-color: black;
@@ -74,3 +75,10 @@ h1 {
 	position:relative;
 	top:1px;
 }
+
+#translated-text {
+	height: 30px;
+	width: 30px;
+	
+}
+

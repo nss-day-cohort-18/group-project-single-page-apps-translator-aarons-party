@@ -24,7 +24,6 @@ console.log("This works");
 
 button.addEventListener("click", function(){
 	if (languageSelect.value === "dutch")  {
-		
 		// dutchTranslate(input);
 		console.log("Dutch: ",  dutchTranslate);
 	} else if (languageSelect.value === "spanish") {
@@ -32,17 +31,21 @@ button.addEventListener("click", function(){
 
 		console.log("Spanish ",  spanishTranslate(input));
 	} else if (languageSelect.value === "german") {
-		Translate.translateToGerman;
-		console.log("German: ",  germanTranslate);
+		input = document.getElementById("text-to-translate").value;
+
+		output.innerHTML = Translate.translateToGerman(input);
+		console.log(output)
+		//console.log("German: ",  input);
 	}
+})
 //output our translation on the page
-output.innerHTML = `<h1>Translation: </h1>`; //${} 
-});
+//output.innerHTML = `<h1>Translation: </h1>`; //${} 
+//});
 
 // this is our condition statement for each language
 
 //output our translation on the page
-output.innerHTML = `<h1>Translation: </h1>`; //${} 
+//output.innerHTML = `<h1>Translation: </h1>`; //${} 
 
 
 console.log("This works");

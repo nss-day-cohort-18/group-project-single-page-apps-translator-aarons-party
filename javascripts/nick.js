@@ -11,7 +11,9 @@ var Translate = (function(original){
 	};
 
 	
-		original.translateToSpanish = function(english){	
+
+		original.translateToSpanish = function(english){
+			console.log("translation", spanish);
 			return spanish[english];
 	};
 
