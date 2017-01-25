@@ -2,31 +2,40 @@
 <html>
 <head>
 	<title>Translator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-<h1>Text Translator:</h1>
 
-<h1>Aaron's Party Text Translator"	
-<input type="text" id="text-to-translate" name="text-to-translate">
+	<div class="wrapper">
+		<h1>True Translation</h1>
+		<input type="text" id="text-to-translate" name="text-to-translate">
+		<br>
+		<br>
+		<select id="languageSelect">
+			<option value="dutch">Dutch</option>
+			<option value="spanish">Spanish</option>
+			<option value="german">German</option>
+		</select>
+		<br>
+		<br>
+		<button type="button" id="button" class="myButton">Translate!</button>
 
-<select id="languageSelect">
-	<option value="dutch">Dutch</option>
-	<option value="spanish">Spanish</option>
-	<option value="german">German</option>
-</select>
 
-<button type="button" id="button">Translate!</button>
+		<div id="translated-text">
 
-<<<<<<< HEAD
+		</div>
+	</div>
+
 <h3>Translation:<h3>
-=======
+
 	<h3>Output</h3>
->>>>>>> d5bdfaea9624e3a874416002b5a4ace074d03360
+
 <div id="translated-text">
 
 </div>
 	
+
 <script type="text/javascript" src="javascripts/bri.js"></script>
 <script type="text/javascript" src="javascripts/nick.js"></script>
 <script type="text/javascript" src="javascripts/aaron.js"></script>
