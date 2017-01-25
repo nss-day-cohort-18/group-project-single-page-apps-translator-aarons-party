@@ -25,6 +25,8 @@ console.log("This works");
 button.addEventListener("click", function(){
 	if (languageSelect.value === "dutch")  {
 		// dutchTranslate(input);
+		input = document.getElementById("text-to-translate").value;
+		output.innerHTML = Translate.translateToDutch(input);
 		console.log("Dutch: ",  dutchTranslate);
 	} else if (languageSelect.value === "spanish") {
 		Translate.translateToSpanish;
