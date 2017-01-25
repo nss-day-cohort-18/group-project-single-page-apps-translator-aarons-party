@@ -16,5 +16,5 @@ var Translate = (function(potato){
   
 	return potato;
 
-})();
+})(Translate);
 
